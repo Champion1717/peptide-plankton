@@ -4,20 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Peptide Plankton</title>
-  <meta name="description" content="Peptide Plankton — curated peptide education, resources, and community. Follow along on TikTok, Instagram, and Discord." />
-  <meta property="og:title" content="Peptide Plankton" />
-  <meta property="og:description" content="Curated peptide education, resources, and community." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="/og-image.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Tailwind via CDN for quick start -->
+  <meta name="description" content="Peptide Plankton — curated peptide education, resources, and community." />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root { color-scheme: dark light; }
     .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.08); }
     .brand-gradient { background: radial-gradient(1200px 600px at 0% 0%, #62eaff33, transparent 60%), radial-gradient(1000px 600px at 100% 0%, #a78bfa33, transparent 60%), linear-gradient(180deg, #0b1220 0%, #0a0f1a 100%); }
-    .card { transition: transform .2s ease, box-shadow .2s ease; }
-    .card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,.35); }
   </style>
 </head>
 <body class="text-slate-100 brand-gradient min-h-screen">
@@ -33,175 +25,79 @@
         <a href="#referrals" class="hover:text-cyan-300">Referrals</a>
         <a href="#community" class="hover:text-cyan-300">Community</a>
         <a href="#content" class="hover:text-cyan-300">Content</a>
-        <a href="#faq" class="hover:text-cyan-300">FAQ</a>
       </nav>
       <a href="https://discord.gg/YOUR_INVITE" target="_blank" class="inline-flex items-center rounded-xl bg-cyan-400/90 hover:bg-cyan-300 text-black px-3 py-2 text-sm font-semibold">Join Discord</a>
     </div>
   </header>
 
   <!-- HERO -->
-  <section id="top" class="relative overflow-hidden">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-      <div class="grid md:grid-cols-2 gap-10 items-center">
-        <div>
-          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
-            Learn, Compare, and <span class="text-cyan-300">Connect</span> —
-            the <span class="text-violet-300">Peptide</span> way.
-          </h1>
-          <p class="mt-5 text-slate-300 max-w-xl">
-            Bite‑sized education, real world notes, and community conversation. Follow @peptideplankton and explore trusted stores via my referral links.
-          </p>
-          <div class="mt-8 flex flex-wrap gap-3">
-            <a href="#referrals" class="px-5 py-3 rounded-xl bg-cyan-400/90 text-black font-semibold hover:bg-cyan-300">See Referral Links</a>
-            <a href="#content" class="px-5 py-3 rounded-xl border border-white/20 hover:border-white/40">Latest Content</a>
-          </div>
-          <div class="mt-6 flex items-center gap-4 text-sm text-slate-300">
-            <!-- Replace with your handles/links -->
-            <a href="https://www.tiktok.com/@peptide.plankton" target="_blank" class="hover:text-white">TikTok</a>
-            <span class="opacity-40">•</span>
-            <a href="https://www.instagram.com/peptideplankton" target="_blank" class="hover:text-white">Instagram</a>
-            <span class="opacity-40">•</span>
-            <a href="https://discord.gg/YOUR_INVITE" target="_blank" class="hover:text-white">Discord</a>
-          </div>
+  <section id="top" class="relative overflow-hidden py-20 md:py-28">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+          Learn, Compare, and <span class="text-cyan-300">Connect</span> — the <span class="text-violet-300">Peptide</span> way.
+        </h1>
+        <p class="mt-5 text-slate-300 max-w-xl">
+          Bite‑sized education, real world notes, and community conversation. Follow @peptide.plankton and explore trusted stores via my referral links.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#referrals" class="px-5 py-3 rounded-xl bg-cyan-400/90 text-black font-semibold hover:bg-cyan-300">See Referral Links</a>
+          <a href="#content" class="px-5 py-3 rounded-xl border border-white/20 hover:border-white/40">Latest Content</a>
         </div>
-        <div class="glass rounded-2xl p-6 md:p-10 border border-white/10">
-          <div class="aspect-video w-full rounded-xl bg-gradient-to-br from-sky-500/20 to-fuchsia-500/20 grid place-items-center text-center p-6">
-            <div>
-              <p class="text-sm uppercase tracking-widest text-slate-300">Featured</p>
-              <h3 class="text-2xl md:text-3xl font-semibold">This Week’s Deep Dive</h3>
-              <p class="mt-3 text-slate-300">Swap this area with an embedded TikTok/Instagram post or a teaser image.</p>
-            </div>
-          </div>
-          <div class="mt-4 text-xs text-slate-400">
-            *Affiliate & medical disclaimers below. Always consult a qualified professional.
-          </div>
+        <div class="mt-6 flex items-center gap-4 text-sm text-slate-300">
+          <a href="https://www.tiktok.com/@peptide.plankton" target="_blank" class="hover:text-white">TikTok</a>
+          <span class="opacity-40">•</span>
+          <a href="https://www.instagram.com/peptideplankton" target="_blank" class="hover:text-white">Instagram</a>
+          <span class="opacity-40">•</span>
+          <a href="https://discord.gg/YOUR_INVITE" target="_blank" class="hover:text-white">Discord</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="py-16 md:py-24">
-    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl md:text-4xl font-bold">What is Peptide Plankton?</h2>
-      <p class="mt-4 text-slate-300 leading-relaxed">
-        Peptide Plankton started on TikTok and Instagram to make complex topics simple. I’m not a doctor and none of this is medical advice.
-        I curate educational content, reviews, and notes learned along the way—plus vetted shops where you can do your own research.
-      </p>
     </div>
   </section>
 
   <!-- REFERRALS -->
   <section id="referrals" class="py-16 md:py-24 bg-white/5 border-y border-white/10">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-      <div class="flex items-end justify-between gap-6 flex-wrap">
-        <h2 class="text-3xl md:text-4xl font-bold">Recommended Stores</h2>
-        <p class="text-sm text-slate-300">These are affiliate links. If you purchase, I may earn a commission at no extra cost to you.</p>
-      </div>
-      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- CARD TEMPLATE: duplicate and edit -->
-        
-
-        
-      </div>
+      <h2 class="text-3xl md:text-4xl font-bold">Recommended Store</h2>
+      <article class="card rounded-2xl border border-white/10 glass p-6 mt-8">
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 rounded-lg bg-gradient-to-br from-cyan-400 to-violet-500"></div>
+          <h3 class="text-xl font-semibold">nextgenpeps.com</h3>
+        </div>
+        <p class="mt-3 text-slate-300 text-sm">I like this vendor for quick US deliveries and consistently high purity.</p>
+        <ul class="mt-4 text-sm list-disc list-inside text-slate-300">
+          <li>Quick US deliveries</li>
+          <li>High purity</li>
+        </ul>
+        <a class="mt-5 inline-flex w-full justify-center rounded-xl bg-cyan-400/90 hover:bg-cyan-300 text-black font-semibold px-4 py-2" href="https://nextgenpeps.com/" target="_blank" rel="nofollow sponsored noopener">Visit nextgenpeps.com</a>
+      </article>
     </div>
   </section>
 
-  <!-- COMMUNITY / DISCORD -->
-  <section id="community" class="py-16 md:py-24">
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-8 items-start">
-        <div>
-          <h2 class="text-3xl md:text-4xl font-bold">Join the Community</h2>
-          <p class="mt-3 text-slate-300">Ask questions, share notes, and meet others exploring peptides. Hop in the Discord.</p>
-          <div class="mt-6 flex gap-3 flex-wrap">
-            <a href="https://discord.gg/YOUR_INVITE" target="_blank" class="px-5 py-3 rounded-xl bg-violet-400/90 text-black font-semibold hover:bg-violet-300">Open Discord</a>
-            <a href="https://www.tiktok.com/@peptide.plankton" target="_blank" class="px-5 py-3 rounded-xl border border-white/20 hover:border-white/40">TikTok</a>
-            <a href="https://www.instagram.com/peptideplankton" target="_blank" class="px-5 py-3 rounded-xl border border-white/20 hover:border-white/40">Instagram</a>
-            <a href="mailto:hello@peptideplankton.com" class="px-5 py-3 rounded-xl border border-white/20 hover:border-white/40">Email</a>
-          </div>
-          <p class="mt-6 text-xs text-slate-400">Tip: To embed your server, enable "Server Widget" in Discord settings and replace the iframe below with the widget code.</p>
-        </div>
-        <div class="glass rounded-2xl p-4 border border-white/10">
-          <!-- Placeholder embed. Replace with your actual Discord widget iframe -->
-          <div class="aspect-[4/3] w-full rounded-xl overflow-hidden bg-black/40 grid place-items-center text-slate-400 text-center p-6">
-            <div>
-              <p class="font-semibold">Discord Widget Placeholder</p>
-              <p class="text-sm mt-2">In Discord → Server Settings → Widget → Enable. Copy the iframe here.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTENT FEED -->
+  <!-- LATEST CONTENT -->
   <section id="content" class="py-16 md:py-24 bg-white/5 border-y border-white/10">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
       <div class="flex items-end justify-between gap-6 flex-wrap">
         <h2 class="text-3xl md:text-4xl font-bold">Latest Content</h2>
         <a href="https://www.tiktok.com/@peptide.plankton" target="_blank" class="text-sm text-cyan-300 hover:underline">Follow on TikTok →</a>
       </div>
-
       <div class="mt-8 grid md:grid-cols-2 gap-6">
-        <!-- TikTok Embed Example (replace with your post URL) -->
         <article class="glass rounded-2xl p-4 border border-white/10">
-          <blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/@peptide.plankton/video/7564338848570903838\" data-video-id=\"7564338848570903838\" style=\"max-width: 605px;min-width: 325px;\">
-            <section>Loading TikTok…<\/section>
-          <\/blockquote>
+          <iframe src="https://www.tiktok.com/embed/v2/7564338848570903838" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
         </article>
-
-        <!-- Instagram Embed Example (replace with your post URL) -->
-        <article class=\"glass rounded-2xl p-4 border border-white/10\">
-          <blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/@peptide.plankton/video/7565445734129044767\" data-video-id=\"7565445734129044767\" style=\"max-width: 605px;min-width: 325px;\">
-            <section>Loading TikTok…<\/section>
-          <\/blockquote>
-        <\/article>
-      </div>
-
-      <!-- Required embed scripts -->
-      <script async src="https://www.tiktok.com/embed.js"></script>
-      <script async src="https://www.instagram.com/embed.js"></script>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq" class="py-16 md:py-24">
-    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl md:text-4xl font-bold">FAQ</h2>
-      <div class="mt-8 grid gap-6">
-        <details class="glass rounded-xl p-5 border border-white/10" open>
-          <summary class="font-semibold cursor-pointer">Are you a medical professional?</summary>
-          <p class="mt-3 text-slate-300">No. I share educational content and personal notes. None of this is medical advice. Do your own research and consult a qualified professional.</p>
-        </details>
-        <details class="glass rounded-xl p-5 border border-white/10">
-          <summary class="font-semibold cursor-pointer">Do you earn money from links?</summary>
-          <p class="mt-3 text-slate-300">Some links are affiliate or referral links. If you buy through them, I may earn a commission at no extra cost to you.</p>
-        </details>
-        <details class="glass rounded-xl p-5 border border-white/10">
-          <summary class="font-semibold cursor-pointer">How can I request a topic?</summary>
-          <p class="mt-3 text-slate-300">Drop a note in Discord or DM me on TikTok/Instagram. I keep a running list and often feature community questions.</p>
-        </details>
+        <article class="glass rounded-2xl p-4 border border-white/10">
+          <iframe src="https://www.tiktok.com/embed/v2/7565445734129044767" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="py-10 border-t border-white/10">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-        <p class="text-sm text-slate-400">© <span id="year"></span> Peptide Plankton — All rights reserved.</p>
-        <div class="flex items-center gap-4 text-sm text-slate-300">
-          <a href="#" class="hover:text-white">Affiliate Disclosure</a>
-          <a href="#" class="hover:text-white">Privacy</a>
-          <a href="mailto:hello@peptideplankton.com" class="hover:text-white">Contact</a>
-        </div>
-      </div>
-    </div>
+  <footer class="py-10 border-t border-white/10 text-center text-slate-400">
+    <p>© <span id="year"></span> Peptide Plankton — All rights reserved.</p>
   </footer>
 
   <script>
-    // Dynamic year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
