@@ -10,6 +10,8 @@
     :root { color-scheme: dark light; }
     .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.08); }
     .brand-gradient { background: radial-gradient(1200px 600px at 0% 0%, #62eaff33, transparent 60%), radial-gradient(1000px 600px at 100% 0%, #a78bfa33, transparent 60%), linear-gradient(180deg, #0b1220 0%, #0a0f1a 100%); }
+    .card { transition: transform .2s ease, box-shadow .2s ease; }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,0,0,.35); }
   </style>
 </head>
 <body class="text-slate-100 brand-gradient min-h-screen">
@@ -26,7 +28,7 @@
         <a href="#community" class="hover:text-cyan-300">Community</a>
         <a href="#content" class="hover:text-cyan-300">Content</a>
       </nav>
-      <a href="https://discord.gg/YOUR_INVITE" target="_blank" class="inline-flex items-center rounded-xl bg-cyan-400/90 hover:bg-cyan-300 text-black px-3 py-2 text-sm font-semibold">Join Discord</a>
+      <a href="https://discord.gg/Vhzm9AEd77" target="_blank" class="inline-flex items-center rounded-xl bg-cyan-400/90 hover:bg-cyan-300 text-black px-3 py-2 text-sm font-semibold">Join Discord</a>
     </div>
   </header>
 
@@ -49,7 +51,7 @@
           <span class="opacity-40">•</span>
           <a href="https://www.instagram.com/peptideplankton" target="_blank" class="hover:text-white">Instagram</a>
           <span class="opacity-40">•</span>
-          <a href="https://discord.gg/YOUR_INVITE" target="_blank" class="hover:text-white">Discord</a>
+          <a href="https://discord.gg/Vhzm9AEd77" target="_blank" class="hover:text-white">Discord</a>
         </div>
       </div>
       <div class="flex justify-center md:justify-end">
@@ -62,11 +64,43 @@
   <section id="referrals" class="py-16 md:py-24 bg-white/5 border-y border-white/10">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-3xl md:text-4xl font-bold mb-8">Recommended Store</h2>
-      <div class="glass inline-block rounded-2xl border border-white/10 p-8">
-        <img src="NextGenPeps.png" alt="NextGenPeps logo" class="mx-auto mb-4" style="max-height:50px;" />
-        <h3 class="text-2xl font-semibold mb-2">NextGenPeps</h3>
-        <p class="text-slate-300 text-sm max-w-md mx-auto">I like this vendor for quick US deliveries and consistently high purity.</p>
-        <a href="https://nextgenpeps.com/" target="_blank" class="mt-5 inline-flex justify-center rounded-xl bg-cyan-400/90 hover:bg-cyan-300 text-black font-semibold px-4 py-2">Visit nextgenpeps.com</a>
+      <div class="glass inline-block rounded-2xl border border-white/10 p-10 md:p-12 max-w-3xl w-full card">
+        <img src="NextGenPeps.png" alt="NextGenPeps logo" class="mx-auto mb-5" style="max-height:80px;" />
+        <h3 class="text-3xl font-semibold mb-3">NextGenPeps</h3>
+        <p class="text-slate-300 text-sm md:text-base max-w-xl mx-auto">I like this vendor for quick US deliveries and consistently high purity.</p>
+        <ul class="mt-4 text-sm md:text-base list-disc list-inside text-slate-200 text-left max-w-xl mx-auto">
+          <li>Great for quick deliveries in USA/Canada</li>
+          <li>USA tested</li>
+          <li>Easy checkout flow — cards, crypto, Venmo, Zelle</li>
+        </ul>
+        <a href="https://nextgenpeps.com/" target="_blank" class="mt-6 inline-flex justify-center rounded-xl bg-cyan-400/90 hover:bg-cyan-300 text-black font-semibold px-6 py-3">Visit nextgenpeps.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY CTA (Discord / TikTok / Instagram) -->
+  <section id="community" class="py-16 md:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between gap-6 flex-wrap">
+        <h2 class="text-3xl md:text-4xl font-bold">Join the Community</h2>
+        <p class="text-sm text-slate-300">Hop into Discord and follow on TikTok & Instagram for new drops.</p>
+      </div>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <a href="https://discord.gg/Vhzm9AEd77" target="_blank" class="glass card rounded-2xl p-6 border border-white/10 flex flex-col items-start">
+          <span class="text-xl font-semibold">Discord</span>
+          <p class="mt-2 text-slate-300 text-sm">Ask questions, share notes, and get updates.</p>
+          <span class="mt-4 inline-flex rounded-xl bg-violet-400/90 text-black font-semibold px-4 py-2">Join Discord</span>
+        </a>
+        <a href="https://www.tiktok.com/@peptide.plankton" target="_blank" class="glass card rounded-2xl p-6 border border-white/10 flex flex-col items-start">
+          <span class="text-xl font-semibold">TikTok</span>
+          <p class="mt-2 text-slate-300 text-sm">Bite‑sized explainers and quick tips.</p>
+          <span class="mt-4 inline-flex rounded-xl bg-cyan-400/90 text-black font-semibold px-4 py-2">Follow on TikTok</span>
+        </a>
+        <a href="https://www.instagram.com/peptideplankton" target="_blank" class="glass card rounded-2xl p-6 border border-white/10 flex flex-col items-start">
+          <span class="text-xl font-semibold">Instagram</span>
+          <p class="mt-2 text-slate-300 text-sm">Visual snippets, carousels, and updates.</p>
+          <span class="mt-4 inline-flex rounded-xl bg-cyan-400/90 text-black font-semibold px-4 py-2">Follow on Instagram</span>
+        </a>
       </div>
     </div>
   </section>
